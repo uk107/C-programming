@@ -233,12 +233,9 @@ This extended enum list includes various features that can be found in modern ve
 
 ---
 
-Certainly! Below are detailed functional requirements for each hardkey, including example data and the functions needed to handle these events.
-
 ### Functional Requirements for Each Hardkey
 
 #### 1. **IGNITION**
-   - **Function:** `void handleIgnition(void);`
    - **Data Required:** 
      - Ignition state (On/Off)
    - **Description:**
@@ -246,40 +243,34 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Ensure safety checks are performed before starting the engine.
 
 #### 2. **HORN**
-   - **Function:** `void handleHorn(void);`
    - **Data Required:** None
    - **Description:**
      - Activate the horn to alert other drivers or pedestrians.
 
 #### 3. **HEADLIGHTS**
-   - **Function:** `void handleHeadlights(void);`
    - **Data Required:** 
      - Headlight state (Off/Low/High)
    - **Description:**
      - Toggle between off, low beam, and high beam headlights.
 
 #### 4. **TURN_SIGNALS**
-   - **Function:** `void handleTurnSignals(void);`
    - **Data Required:** 
      - Direction (Left/Right)
    - **Description:**
      - Activate the left or right turn signal.
 
 #### 5. **WINDSHIELD_WIPERS**
-   - **Function:** `void handleWindshieldWipers(void);`
    - **Data Required:** 
      - Wiper speed (Off/Low/High)
    - **Description:**
      - Control the windshield wipers’ speed.
 
 #### 6. **HAZARD_LIGHTS**
-   - **Function:** `void handleHazardLights(void);`
    - **Data Required:** None
    - **Description:**
      - Toggle the hazard lights on or off.
 
 #### 7. **CRUISE_CONTROL**
-   - **Function:** `void handleCruiseControl(void);`
    - **Data Required:** 
      - Cruise control state (On/Off)
      - Speed setting
@@ -287,55 +278,47 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Enable or disable cruise control and set the desired speed.
 
 #### 8. **RADIO_VOLUME**
-   - **Function:** `void handleRadioVolume(int volume);`
    - **Data Required:** 
      - Volume level (0-100)
    - **Description:**
      - Adjust the radio volume to the specified level.
 
 #### 9. **RADIO_TUNING**
-   - **Function:** `void handleRadioTuning(int station);`
    - **Data Required:** 
      - Radio station frequency
    - **Description:**
      - Change the radio station to the specified frequency.
 
 #### 10. **RADIO_SOURCE**
-   - **Function:** `void handleRadioSource(int source);`
    - **Data Required:** 
      - Source type (AM/FM/Bluetooth/etc.)
    - **Description:**
      - Switch the audio source.
 
 #### 11. **CLIMATE_TEMP**
-   - **Function:** `void handleClimateTemp(int temperature);`
    - **Data Required:** 
      - Desired temperature
    - **Description:**
      - Adjust the climate control temperature to the specified setting.
 
 #### 12. **CLIMATE_FAN**
-   - **Function:** `void handleClimateFan(int speed);`
    - **Data Required:** 
      - Fan speed level (0-5)
    - **Description:**
      - Adjust the climate control fan speed.
 
 #### 13. **CLIMATE_AIRFLOW**
-   - **Function:** `void handleClimateAirflow(int direction);`
    - **Data Required:** 
      - Airflow direction (Face/Feet/Defrost/etc.)
    - **Description:**
      - Set the climate control airflow direction.
 
 #### 14. **DEFROST**
-   - **Function:** `void handleDefrost(void);`
    - **Data Required:** None
    - **Description:**
      - Activate the windshield defrost.
 
 #### 15. **POWER_WINDOWS**
-   - **Function:** `void handlePowerWindows(int window, int action);`
    - **Data Required:** 
      - Window identifier (FrontLeft/FrontRight/RearLeft/RearRight)
      - Action (Up/Down)
@@ -343,21 +326,18 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Control the specified power window.
 
 #### 16. **WINDOW_LOCK**
-   - **Function:** `void handleWindowLock(int state);`
    - **Data Required:** 
      - Lock state (Lock/Unlock)
    - **Description:**
      - Lock or unlock the power windows.
 
 #### 17. **DOOR_LOCKS**
-   - **Function:** `void handleDoorLocks(int state);`
    - **Data Required:** 
      - Lock state (Lock/Unlock)
    - **Description:**
      - Lock or unlock the car doors.
 
 #### 18. **MIRROR_ADJUST**
-   - **Function:** `void handleMirrorAdjust(int mirror, int direction);`
    - **Data Required:** 
      - Mirror identifier (Left/Right)
      - Adjustment direction (Up/Down/Left/Right)
@@ -365,7 +345,6 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Adjust the specified side mirror.
 
 #### 19. **SEAT_ADJUST**
-   - **Function:** `void handleSeatAdjust(int seat, int adjustment);`
    - **Data Required:** 
      - Seat identifier (Driver/Passenger)
      - Adjustment type (Position/Recline/Lumbar)
@@ -373,47 +352,40 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Adjust the specified seat’s position, recline, or lumbar support.
 
 #### 20. **SUNROOF_CONTROL**
-   - **Function:** `void handleSunroofControl(int action);`
    - **Data Required:** 
      - Action (Open/Close/Tilt)
    - **Description:**
      - Control the sunroof’s state.
 
 #### 21. **TRUNK_RELEASE**
-   - **Function:** `void handleTrunkRelease(void);`
    - **Data Required:** None
    - **Description:**
      - Release the trunk latch.
 
 #### 22. **FUEL_CAP_RELEASE**
-   - **Function:** `void handleFuelCapRelease(void);`
    - **Data Required:** None
    - **Description:**
      - Release the fuel cap latch.
 
 #### 23. **PARKING_BRAKE**
-   - **Function:** `void handleParkingBrake(int state);`
    - **Data Required:** 
      - Brake state (Engage/Disengage)
    - **Description:**
      - Engage or disengage the parking brake.
 
 #### 24. **DRIVE_MODE**
-   - **Function:** `void handleDriveMode(int mode);`
    - **Data Required:** 
      - Drive mode (Eco/Sport/Normal)
    - **Description:**
      - Change the vehicle’s drive mode.
 
 #### 25. **TRACTION_CONTROL**
-   - **Function:** `void handleTractionControl(int state);`
    - **Data Required:** 
      - Control state (On/Off)
    - **Description:**
      - Enable or disable traction control.
 
 #### 26. **HEATED_SEATS**
-   - **Function:** `void handleHeatedSeats(int seat, int level);`
    - **Data Required:** 
      - Seat identifier (Driver/Passenger)
      - Heat level (0-3)
@@ -421,7 +393,6 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Activate and set the level of heated seats.
 
 #### 27. **COOLED_SEATS**
-   - **Function:** `void handleCooledSeats(int seat, int level);`
    - **Data Required:** 
      - Seat identifier (Driver/Passenger)
      - Cooling level (0-3)
@@ -429,59 +400,50 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Activate and set the level of cooled seats.
 
 #### 28. **STEERING_ADJUST**
-   - **Function:** `void handleSteeringAdjust(int direction);`
    - **Data Required:** 
      - Adjustment direction (Up/Down/In/Out)
    - **Description:**
      - Adjust the steering wheel position.
 
 #### 29. **INTERIOR_LIGHT**
-   - **Function:** `void handleInteriorLight(int state);`
    - **Data Required:** 
      - Light state (On/Off)
    - **Description:**
      - Control the interior lighting.
 
 #### 30. **REAR_DEFROST**
-   - **Function:** `void handleRearDefrost(int state);`
    - **Data Required:** 
      - Defrost state (On/Off)
    - **Description:**
      - Activate the rear window defrost.
 
 #### 31. **CHILD_LOCK**
-   - **Function:** `void handleChildLock(int state);`
    - **Data Required:** 
      - Lock state (Engage/Disengage)
    - **Description:**
      - Engage or disengage the child lock.
 
 #### 32. **MUTE_BUTTON**
-   - **Function:** `void handleMuteButton(void);`
    - **Data Required:** None
    - **Description:**
      - Mute or unmute the audio system.
 
 #### 33. **VOICE_COMMAND**
-   - **Function:** `void handleVoiceCommand(void);`
    - **Data Required:** None
    - **Description:**
      - Activate the voice command system.
 
 #### 34. **PHONE_ANSWER**
-   - **Function:** `void handlePhoneAnswer(void);`
    - **Data Required:** None
    - **Description:**
      - Answer an incoming phone call.
 
 #### 35. **PHONE_END_CALL**
-   - **Function:** `void handlePhoneEndCall(void);`
    - **Data Required:** None
    - **Description:**
      - End the ongoing phone call.
 
 #### 36. **NAVIGATION**
-   - **Function:** `void handleNavigation(void);`
    - **Data Required:** 
      - Destination coordinates
    - **Description:**
@@ -490,74 +452,63 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Activate the navigation system and set a destination.
 
 #### 37. **LANE_ASSIST**
-   - **Function:** `void handleLaneAssist(int state);`
    - **Data Required:** 
      - Assist state (On/Off)
    - **Description:**
      - Enable or disable lane assist.
 
 #### 38. **PARKING_ASSIST**
-   - **Function:** `void handleParkingAssist(int state);`
    - **Data Required:** 
      - Assist state (On/Off)
    - **Description:**
      - Enable or disable parking assist.
 
 #### 39. **HILL_DESCENT**
-   - **Function:** `void handleHillDescent(int state);`
    - **Data Required:** 
      - Control state (On/Off)
    - **Description:**
      - Enable or disable hill descent control.
 
 #### 40. **HUD_ADJUST**
-   - **Function:** `void handleHUDAdjust(int setting);`
    - **Data Required:** 
      - Display setting
    - **Description:**
      - Adjust the head-up display settings.
 
 #### 41. **GLOVE_BOX_RELEASE**
-   - **Function:** `void handleGloveBoxRelease(void);`
    - **Data Required:** None
    - **Description:**
      - Release the glove box latch.
 
 #### 42. **FOG_LIGHTS**
-   - **Function:** `void handleFogLights(int state);`
    - **Data Required:** 
      - Light state (On/Off)
    - **Description:**
      - Toggle the fog lights.
 
 #### 43. **EMERGENCY_BRAKE**
-   - **Function:** `void handleEmergencyBrake(void);`
    - **Data Required:** None
    - **Description:**
      - Activate the emergency braking system.
 
 #### 44. **TRAILER_CONTROL**
-   - **Function:** `void handleTrailerControl(int setting);`
    - **Data Required:** 
      - Control setting
    - **Description:**
      - Control the trailer if the vehicle is equipped with towing capabilities.
 
 #### 45. **AUTO_HOLD**
-   - **Function:** `void handleAutoHold(int state);`
    - **Data Required:** 
      - Hold state (On/Off)
    - **Description:**
      - Enable or disable the auto hold feature.
 
 #### 46. **HANDS_FREE**
-   - **Function:** `void handleHandsFree(void);`
    - **Data Required:** None
    - **Description:**
      - Activate the hands-free system for phone calls.
 
 #### 47. **SEAT_HEATER**
-   - **Function:** `void handleSeatHeater(int seat, int level);`
    - **Data Required:** 
      - Seat identifier (Driver/Passenger)
      - Heat level (0-3)
@@ -565,7 +516,6 @@ Certainly! Below are detailed functional requirements for each hardkey, includin
      - Activate and set the level of the seat heater for the specified seat.
 
 #### 48. **SEAT_COOLER**
-   - **Function:** `void handleSeatCooler(int seat, int level);`
    - **Data Required:** 
      - Seat identifier (Driver/Passenger)
      - Cooling level (0-3)
