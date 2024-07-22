@@ -171,28 +171,6 @@ int main() {
 - `globalVar` is declared outside of any function, so it is accessible both in `main` and `exampleFunction`.
 - Both `main` and `exampleFunction` can access and print the value of `globalVar`.
 
-#### Differences Between Local and Global Variables
-
-1. **Scope:**
-   - **Local Variable:** Limited to the function or block in which it is declared.
-   - **Global Variable:** Accessible from any function in the program.
-
-2. **Lifetime:**
-   - **Local Variable:** Exists only during the execution of the function or block.
-   - **Global Variable:** Exists for the entire duration of the program.
-
-3. **Storage:**
-   - **Local Variable:** Typically stored in the stack.
-   - **Global Variable:** Typically stored in the data segment of memory.
-
-4. **Initialization:**
-   - **Local Variable:** Must be explicitly initialized before use. If not initialized, it contains garbage value.
-   - **Global Variable:** Automatically initialized to zero if not explicitly initialized.
-
-5. **Visibility:**
-   - **Local Variable:** Not visible outside the function or block where it is declared.
-   - **Global Variable:** Visible to all functions within the program.
-
 #### Shadowing
 
 Sometimes, a local variable can have the same name as a global variable. In such cases, the local variable "shadows" the global variable within its scope.
