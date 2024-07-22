@@ -10,4 +10,6 @@
 * `16:30 -17:00` Review Assignment - Offline
 * `17:00 -18:00` Q&A Session - Offline
 
-Self learning resource: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795224#overview
+## Self learning resource: 
+* Control flow: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795224#overview
+* Function: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795306#overview
