@@ -1,4 +1,4 @@
-### Assignment ➡ Flow Control
+### Assignment -> Flow Control
 
 1. **Check if a Number is Even or Odd**
 2. **Check if a Number is Even or Odd Without Using the % Operator**
