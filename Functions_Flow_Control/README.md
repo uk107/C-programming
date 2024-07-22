@@ -32,7 +32,8 @@ char grade = 'A';
 
 #### 2. Defining Functions in C
 
-* Functions in C are blocks of code that perform specific tasks. They help in organizing code, reducing repetition, and improving readability.
+**Definition:**
+Functions in C are blocks of code that perform specific tasks. They help in organizing code, reducing repetition, and improving readability.
 
 **Function Declaration:**
 Specifies the function name, return type, and parameters without the body.
