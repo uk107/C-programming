@@ -229,4 +229,4 @@ typedef enum {
 47. **Seat Heater**: Activate the heater for individual seats.
 48. **Seat Cooler**: Activate the cooler for individual seats.
 
-This extended enum list includes various features that can be found in modern vehicles, allowing for a comprehensive simulation of car hardkey events in your program.
+This extended enum list includes various features that can be found in modern vehicles.
