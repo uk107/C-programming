@@ -1,4 +1,4 @@
-### Assignment -> Function
+### Assignment - Function
 
 1. **Function to Calculate the Area of a Circle (TSRS)**
 2. **Function to Calculate Simple Interest (TSRS)**
