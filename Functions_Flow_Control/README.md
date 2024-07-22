@@ -1,4 +1,4 @@
-# Function & Control 
+# Function & Flow Control 
 ## Topics Covered:
 
 * `09:00 -10:00` Warm up & Review Previous Session - Self learning
@@ -12,4 +12,4 @@
 
 ## Self learning resource: 
 * Control flow: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795224#overview
-* Function: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795306#overview
+* Functions: https://fpt-software.udemy.com/course/c-programming-for-beginners-/learn/lecture/8795306#overview
