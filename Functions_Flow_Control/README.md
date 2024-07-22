@@ -18,14 +18,6 @@
 
 #### 1. Warm up & Review
 
-**Topics:**
-- Data Types and Variables
-- Constants and Keywords
-- Operators and Expressions
-- Arrays and Strings
-
-**Description:**
-
 **Data Types and Variables:**
 C has several data types including `int`, `float`, `char`, and `double` for storing different types of data. Variables are named storage locations in memory.
 
@@ -36,21 +28,11 @@ int age = 25;
 float salary = 50000.50;
 char grade = 'A';
 ```
+---
 
 #### 2. Defining Functions in C
 
-**Objective:**
-Learn how to create and use functions in C.
-
-**Topics:**
-- Function Declaration and Definition
-- Calling Functions
-- Passing Arguments to Functions
-- Function Prototypes
-
-**Description:**
-
-Functions in C are blocks of code that perform specific tasks. They help in organizing code, reducing repetition, and improving readability.
+* Functions in C are blocks of code that perform specific tasks. They help in organizing code, reducing repetition, and improving readability.
 
 **Function Declaration:**
 Specifies the function name, return type, and parameters without the body.
@@ -85,16 +67,6 @@ printf("The sum is %d\n", result);
 ---
 
 #### 3. Returning Data from Functions
-
-**Objective:**
-Understand how to return values from functions and how the return type affects function behavior.
-
-**Topics:**
-- Return Types
-- Using the return Statement
-- Void Functions
-
-**Description:**
 
 **Return Types:**
 Functions can return different data types, including `int`, `float`, `double`, `char`, or even `void` (no return value).
