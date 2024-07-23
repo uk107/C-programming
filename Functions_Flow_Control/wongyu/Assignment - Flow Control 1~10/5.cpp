@@ -6,12 +6,11 @@ int main()
     printf("Enter number\n");
     scanf("%d", &number);
 
-    if((number & 1) == 0) {
-        printf("Even\n");
+    if(number>99) {
+        printf("p\n");
     }
-    else {
-        printf("Odd\n");
+    else{
+        printf("f\n");
     }
 
-    return 0;
 }

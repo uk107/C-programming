@@ -6,12 +6,11 @@ int main()
     printf("Enter number\n");
     scanf("%d", &number);
 
-    if((number & 1) == 0) {
-        printf("Even\n");
+    if(number % 5 == 0) {
+        printf("Dividing by 5\n");
     }
     else {
-        printf("Odd\n");
+        printf("Not divided\n");
     }
 
-    return 0;
 }
