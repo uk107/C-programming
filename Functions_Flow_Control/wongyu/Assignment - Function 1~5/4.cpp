@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-void print(int number) {
+int print_numbers(int number) {
     for (int i = 1; i <= number; i++) {
         printf("%d ", i);
     }
     printf("\n");
+    return number;
 }
 
 int main() {
@@ -13,7 +14,7 @@ int main() {
     scanf("%d", &number);
 
     if (number > 0) {
-        print(number);
+        print_numbers(number);
     } else {
         printf("The number is not a natural number. Please enter a positive integer.\n");
     }

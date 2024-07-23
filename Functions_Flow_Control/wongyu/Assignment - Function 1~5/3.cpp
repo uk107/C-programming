@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-void check(int number) {
+int check(int number) {
     if (number % 2 == 0) {
-        printf("%d even\n", number);
+        return 1; // 짝수
     } else {
-        printf("%d odd\n", number);
+        return 0; // 홀수
     }
 }
 
@@ -14,7 +14,11 @@ int main() {
     printf("enter number: ");
     scanf("%d", &number);
 
-    check(number);
+    if (check(number)) {
+        printf("%d even\n", number);
+    } else {
+        printf("%d odd\n", number);
+    }
 
     return 0;
 }
