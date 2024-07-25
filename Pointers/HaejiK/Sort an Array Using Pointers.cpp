@@ -3,7 +3,6 @@
 //
 
 #include <stdio.h>
-
 void swap(int *a, int *b) {
     int tmp = *a;
     *a = *b;
@@ -33,5 +32,6 @@ int main(void) {
     // Sort in ascending order using bubble sort
     bubble_sort(numbers, num_len);
 
+    // Print all of numbers
     print_numbers(numbers, num_len);
 }
