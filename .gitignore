@@ -1,0 +1,62 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# IDE/editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build directories
+bin/
+obj/
+build/
+
+# Dependency directories
+node_modules/
+vendor/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Compiled object files
+*.o
+*.a
+*.so
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+
+# Java specific
+*.class
+*.jar
+
+# C/C++ specific
+*.dSYM/
+*.stackdump
+
+# MacOS specific
+*.DS_Store
+
+# Windows specific
+*.lnk
+*.cab
+*.msi
+*.iso
