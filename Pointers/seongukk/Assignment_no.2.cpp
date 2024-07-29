@@ -1,28 +1,18 @@
 //2. **Swap Two Strings**: Write a function to swap the contents of two character arrays (strings) using pointers.
 #include <stdio.h>
 
-void SwapChar(char *a, char *b) {
-    char tmp;
-
-    tmp = *a;
+void swap(char **a, char **b) {
+    char *tmp = *a;
     *a = *b;
     *b = tmp;
 }
 
-int main() {
+int main(void) {
 
-    char x,y;
-    printf("write two characters : ");
-    scanf("%c %c", &x,&y);
+    char *a = "kim";
+    char *b = "seonguk";
 
-
-    printf("Before swap: ch1 = %c, ch2 = %c\n", x, y);
-
-
-    SwapChar(&x, &y);
-
-
-    printf("After swap: ch1 = %c, ch2 = %c\n", x, y);
-
+    swap(&a, &b);
+    printf("%s %s\n", a, b);
     return 0;
 }
